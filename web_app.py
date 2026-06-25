@@ -38,7 +38,7 @@ def load_ai_system():
 client, retriever = load_ai_system()
 
 # ----------------- 2. HÀM GỌI AI TỔNG HỢP (HỖ TRỢ CẢ ẢNH + TEXT) -----------------
-def call_gemini_smart(prompt, image=None, model=gemini-3-flash-preview"):
+def call_gemini_smart(prompt, image=None, model="gemini-3-flash-preview"):
     """Hàm gọi AI có cơ chế thử lại và hỗ trợ đa phương thức"""
     for i in range(3): # Thử lại 3 lần nếu lỗi
         try:
